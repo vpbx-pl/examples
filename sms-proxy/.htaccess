@@ -1,0 +1,13 @@
+# Blokada dostępu do plików innych niż sms.php
+<FilesMatch "\.(php)$">
+    Require all denied
+</FilesMatch>
+
+<Files "sms.php">
+    Require all granted
+</Files>
+
+# Jawnie zablokuj pliki konfiguracyjne i README
+<FilesMatch "^(config\.php|config\.example\.php|README\.md|\.htaccess)$">
+    Require all denied
+</FilesMatch>
