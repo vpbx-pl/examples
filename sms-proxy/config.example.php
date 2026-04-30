@@ -15,9 +15,6 @@ return [
     // Domyślny nadawca jeśli klient nie poda ?from=...
     'default_from'     => 'MyApp',
 
-    // Webhook do statusów dostarczenia (callapi wywoła go POST-em).
-    'webhook'          => 'https://example.com/sms-status',
-
     // Whitelista IP. Pusta tablica = brak ograniczeń (NIEZALECANE).
     // Wpisy obsługują wildcards (fnmatch):
     //   '192.168.1.5'   - dokładny IP

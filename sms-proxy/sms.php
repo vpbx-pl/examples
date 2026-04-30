@@ -149,11 +149,9 @@ if ($username === '' || $password === '') {
 }
 
 $payload = [
-    'from'           => $from,
-    'to'             => $to,
-    'text'           => $text,
-    'webhook'        => $config['webhook'] ?? 'https://example.invalid/none',
-    'webhook_method' => 'POST',
+    'from' => $from,
+    'to'   => $to,
+    'text' => $text,
 ];
 
 try {
